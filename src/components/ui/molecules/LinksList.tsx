@@ -1,11 +1,21 @@
-import LinksListHeader from '../atoms/LinksListHeader';
-import LinksListContainer from '../atoms/LinksListContainer';
+import ScrollObserver from '@/components/misc/ScrollObserver';
+import { linksListItems } from '@/constants/objects/LinksListItems';
+import { scrollAnimationStyle } from '@/constants/types';
+import ListItem from '../atoms/ListItem';
+
+const animation: scrollAnimationStyle = {
+	onHidden: ['-translate-x-8', 'opacity-0'],
+	onVisible: ['-translate-x-0', 'opacity-100'],
+};
 
 export default function LinksList() {
 	return (
-		<div className='flex flex-col gap-8'>
-			<LinksListHeader />
-			<LinksListContainer />
-		</div>
+		<ScrollObserver
+			className='w-full flex lg:flex-row flex-col justify-center items-center gap-8'
+			scrollAnimation={animation}>
+			{linksListItems.map((item, index) => (
+				<ListItem {...item} key={index} />
+			))}
+		</ScrollObserver>
 	);
 }

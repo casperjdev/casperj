@@ -1,7 +1,7 @@
 import { techIcons } from '@/constants/icons';
 import { iconWithCaption } from '../types';
 
-export const aboutListItems: iconWithCaption[] = [
+export const aboutIconsItems: iconWithCaption[] = [
 	{
 		icon: techIcons.ReactIcon,
 		name: 'React.js',
