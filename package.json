@@ -34,5 +34,10 @@
 	"type": "module",
 	"dependencies": {
 		"svelte-scrolling": "^1.4.0"
+	},
+	"overrides": {
+		"svelte-scrolling": {
+			"svelte": "^5.0.0-next.0"
+		}
 	}
 }
