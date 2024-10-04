@@ -14,10 +14,10 @@ export type IconLink = {
 export type ScrollObserverProps = {
 	className?: string;
 	children: Snippet;
-	scrollAnimation: ScrollAnimationStyle;
+	transition: ScrollObserverTransition;
 };
 
-export type ScrollAnimationStyle = {
+export type ScrollObserverTransition = {
 	onHidden: string[];
 	onVisible: string[];
 };

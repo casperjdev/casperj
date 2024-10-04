@@ -8,6 +8,14 @@
 	import Projects from '../components/ui/organisms/Projects.svelte';
 </script>
 
+<svelte:head>
+	<title>CASPERJ | Kacper Jeznach</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+</svelte:head>
+
 <Background />
 <Banner />
 <Navbar />

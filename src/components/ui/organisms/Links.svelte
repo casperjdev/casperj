@@ -1,10 +1,11 @@
 <script>
-	import { scrollRef } from 'svelte-scrolling';
+	import { scrollRef } from '$lib/utils/scroll';
 	import LinksIcons from '../molecules/LinksIcons.svelte';
 </script>
 
 <section
 	use:scrollRef={'Links'}
-	class="overflow-hidden xl:px-12 px-4 py-12 flex flex-col gap-12 min-h-[calc(100dvh-3rem)]">
+	class="overflow-hidden xl:px-12 px-4 py-12 flex flex-col gap-12 min-h-[calc(100dvh-3rem)]"
+>
 	<LinksIcons />
 </section>

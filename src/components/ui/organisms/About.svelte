@@ -1,5 +1,5 @@
 <script>
-	import { scrollRef } from 'svelte-scrolling';
+	import { scrollRef } from '$lib/utils/scroll';
 	import AboutIntro from '../atoms/AboutIntro.svelte';
 	import AboutPrimary from '../atoms/AboutPrimary.svelte';
 	import AboutSecondary from '../atoms/AboutSecondary.svelte';

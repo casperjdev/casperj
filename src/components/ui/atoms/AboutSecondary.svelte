@@ -1,14 +1,14 @@
 <script lang="ts">
-	import type { ScrollAnimationStyle } from '$lib/types';
+	import type { ScrollObserverTransition } from '$lib/types';
 	import ScrollObserver from '../../misc/ScrollObserver.svelte';
 
-	const animation: ScrollAnimationStyle = {
+	const transition: ScrollObserverTransition = {
 		onHidden: ['scale-90', 'opacity-0'],
 		onVisible: ['scale-100', 'opacity-100']
 	};
 </script>
 
-<ScrollObserver scrollAnimation={animation} className="xl:px-12">
+<ScrollObserver {transition} className="xl:px-12">
 	<h1 class="text-neutral-300 text-[clamp(0.5rem,2vw,1rem)]">
 		I aim to create elegant and responsive websites for multiple purposes, like blogs and promotional pages.
 	</h1>

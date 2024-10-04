@@ -1,9 +1,10 @@
 <script lang="ts">
 	import type { ScrollObserverProps } from '$lib/types';
 
-	let { className, children, scrollAnimation }: ScrollObserverProps = $props();
+	let { className, children, transition }: ScrollObserverProps = $props();
 
 	let item: HTMLElement = null!;
+	let currentState: string = $state.raw('');
 
 	$effect(() => {
 		const onScroll = () => {
@@ -11,11 +12,9 @@
 			let thresholdOut = item.offsetTop - window.innerHeight;
 
 			if (window.scrollY > thresholdIn) {
-				item.classList.remove(...scrollAnimation.onHidden);
-				item.classList.add(...scrollAnimation.onVisible);
+				currentState = transition.onVisible.join(' ');
 			} else if (window.scrollY < thresholdOut) {
-				item.classList.remove(...scrollAnimation.onVisible);
-				item.classList.add(...scrollAnimation.onHidden);
+				currentState = transition.onHidden.join(' ');
 			}
 		};
 		onScroll();
@@ -29,6 +28,7 @@
 
 <article
 	bind:this={item}
-	class={`${className} ${scrollAnimation.onHidden.join(' ')} transition-transform-opacity ease-smooth duration-500`}>
+	class={`${className ? className : ''} ${currentState} transition-transform-opacity ease-smooth duration-500`.trim()}
+>
 	{@render children()}
 </article>
