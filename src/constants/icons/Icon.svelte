@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { icons } from '$lib/icons/icons';
+	import { icons } from './icons';
 
 	let { name } = $props();
 

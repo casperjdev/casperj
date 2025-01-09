@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { ScrollObservertransition } from '$lib/types';
+	import type { ScrollObserverTransition } from '../../../constants/types/types';
 	import ScrollObserver from '../../misc/ScrollObserver.svelte';
 
-	const transition: ScrollObservertransition = {
+	const transition: ScrollObserverTransition = {
 		onHidden: ['-translate-x-8', 'opacity-0'],
 		onVisible: ['-translate-x-0', 'opacity-100']
 	};

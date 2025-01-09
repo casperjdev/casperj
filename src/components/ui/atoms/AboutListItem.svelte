@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Icon from '$lib/icons/Icon.svelte';
-	import type { IconLink } from '$lib/types';
+	import Icon from '../../../constants/icons/Icon.svelte';
+	import type { IconLink } from '../../../constants/types/types';
 
 	let { icon, label, href }: IconLink = $props();
 </script>

@@ -1,4 +1,4 @@
-import type { Icon } from '$lib/types';
+import type { Icon } from '../../constants/types/types';
 
 export const icons: Icon[] = [
 	{

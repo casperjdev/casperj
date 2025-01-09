@@ -1,4 +1,4 @@
-import type { IconLink } from '../types';
+import type { IconLink } from '../types/types';
 
 export const LinksListItems: IconLink[] = [
 	{

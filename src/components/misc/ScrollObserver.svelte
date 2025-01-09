@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { ScrollObserverProps } from '$lib/types';
+	import type { ScrollObserverProps } from '../../constants/types/types';
 
 	let { className, children, transition }: ScrollObserverProps = $props();
 

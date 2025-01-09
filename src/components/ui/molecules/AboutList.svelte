@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { AboutIconsItems } from '$lib/objects/AboutIconsItems';
-	import type { ScrollObserverTransition } from '$lib/types';
+	import { AboutListItems } from '../../../constants/objects/AboutListItems';
+	import type { ScrollObserverTransition } from '../../../constants/types/types';
 	import ScrollObserver from '../../misc/ScrollObserver.svelte';
-	import AboutIcon from '../atoms/AboutIcon.svelte';
+	import AboutListItem from '../atoms/AboutListItem.svelte';
 
 	const transition: ScrollObserverTransition = {
 		onHidden: ['-translate-y-8', 'opacity-0'],
@@ -15,8 +15,8 @@
 	<div
 		class="xl:flex xl:flex-row md:grid-cols-3 md:grid-rows-2 grid justify-around place-items-center grid-cols-[4rem_4rem] grid-rows-3 gap-y-8"
 	>
-		{#each AboutIconsItems as item}
-			<AboutIcon {...item} />
+		{#each AboutListItems as item}
+			<AboutListItem {...item} />
 		{/each}
 	</div>
 </ScrollObserver>

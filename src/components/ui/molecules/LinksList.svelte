@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { LinksListItems } from '$lib/objects/LinksIconsItems';
-	import type { ScrollObservertransition } from '$lib/types';
+	import { LinksListItems } from '../../../constants/objects/LinksListItems';
+	import type { ScrollObserverTransition } from '../../../constants/types/types';
 	import ScrollObserver from '../../misc/ScrollObserver.svelte';
-	import LinksIcon from '../atoms/LinksIcon.svelte';
+	import LinksListItem from '../atoms/LinksListItem.svelte';
 
-	const transition: ScrollObservertransition = {
+	const transition: ScrollObserverTransition = {
 		onHidden: ['translate-x-8', 'opacity-0'],
 		onVisible: ['translate-x-0', 'opacity-100']
 	};
@@ -14,7 +14,7 @@
 	<h1 class="text-center text-neutral-300">Let's Connect!</h1>
 	<div class="lg:w-full w-max flex lg:flex-row flex-col justify-center items-center lg:gap-12">
 		{#each LinksListItems as item}
-			<LinksIcon {...item} />
+			<LinksListItem {...item} />
 		{/each}
 	</div>
 </ScrollObserver>

@@ -1,6 +1,6 @@
-import type { IconLink } from '$lib/types';
+import type { IconLink } from '../types/types';
 
-export const AboutIconsItems: IconLink[] = [
+export const AboutListItems: IconLink[] = [
 	{
 		icon: 'reactjs',
 		label: 'React.js',

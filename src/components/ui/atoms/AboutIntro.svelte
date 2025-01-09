@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { ScrollObserverTransition } from '$lib/types';
+	import type { ScrollObserverTransition } from '../../../constants/types/types';
 	import ScrollObserver from '../../misc/ScrollObserver.svelte';
 
 	const transition: ScrollObserverTransition = {

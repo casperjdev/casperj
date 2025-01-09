@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { scrollTo } from '$lib/utils/scroll';
+	import { scrollTo } from '$lib/scroll';
 
 	let { ref }: { ref: string } = $props();
 </script>

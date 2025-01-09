@@ -1,5 +1,5 @@
 <script>
-	import { scrollRef } from '$lib/utils/scroll';
+	import { scrollRef } from '$lib/scroll';
 
 	import ProjectsList from '../molecules/ProjectsList.svelte';
 </script>
