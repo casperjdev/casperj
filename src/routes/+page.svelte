@@ -19,7 +19,7 @@
 <Background />
 <Banner />
 <Navbar />
-<main class="divide-y divide-dashed divide-neutral-400">
+<main class="divide-y divide-dashed divide-neutral-400 flex flex-col gap-12">
 	<About />
 	<Projects />
 	<Links />

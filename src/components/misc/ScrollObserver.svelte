@@ -28,7 +28,7 @@
 
 <article
 	bind:this={item}
-	class={`${className ? className : ''} ${currentState} transition-transform-opacity ease-smooth duration-500`.trim()}
+	class={`${className ? className : ''} ${currentState} transition-[translate,opacity] ease-smooth duration-500`.trim()}
 >
 	{@render children()}
 </article>
