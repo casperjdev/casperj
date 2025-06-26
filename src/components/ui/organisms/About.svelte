@@ -6,7 +6,7 @@
 	import AboutList from '../molecules/AboutList.svelte';
 </script>
 
-<section use:scrollRef={'About'} class="overflow-hidden px-12 py-12 flex flex-col gap-12">
+<section use:scrollRef={'About'} class="overflow-hidden xl:px-12 px-4 py-12 flex flex-col gap-12">
 	<AboutIntro />
 	<AboutPrimary />
 	<AboutList />

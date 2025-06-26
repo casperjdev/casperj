@@ -8,7 +8,7 @@
 	};
 </script>
 
-<ScrollObserver className="text-neutral-300 flex flex-col gap-12" {transition}>
-	<h1 class="text-center text-neutral-300">My projects</h1>
+<ScrollObserver className="text-neutral-200 flex flex-col gap-12" {transition}>
+	<h1 class="text-center text-neutral-200">My projects</h1>
 	There are currently no projects here.
 </ScrollObserver>

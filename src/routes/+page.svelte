@@ -19,8 +19,12 @@
 <Background />
 <Banner />
 <Navbar />
-<main class="divide-y divide-dashed divide-neutral-400 flex flex-col gap-12">
-	<About />
-	<Projects />
-	<Links />
+<main class="flex flex-row w-full max-w-8xl mx-auto h-full">
+	<div class="pattern-[-45deg] text-ptrn-fg border-x border-current w-6 shrink-0 lg:block hidden"></div>
+	<div class="divide-y divide-dashed flex-auto divide-neutral-400">
+		<About />
+		<Projects />
+		<Links />
+	</div>
+	<div class="pattern-[-45deg] text-ptrn-fg border-x border-current w-6 shrink-0 lg:block hidden"></div>
 </main>

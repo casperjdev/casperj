@@ -11,7 +11,7 @@
 </script>
 
 <ScrollObserver {transition} className="flex flex-col gap-12">
-	<h1 class="text-center text-neutral-300">What i use:</h1>
+	<h1 class="text-center text-neutral-200">What i use:</h1>
 	<div
 		class="xl:flex xl:flex-row md:grid-cols-3 md:grid-rows-2 grid justify-around place-items-center grid-cols-[4rem_4rem] grid-rows-3 gap-y-8"
 	>

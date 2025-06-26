@@ -11,7 +11,7 @@
 </script>
 
 <ScrollObserver {transition} className="my-auto flex flex-col items-center lg:gap-12 gap-4">
-	<h1 class="text-center text-neutral-300">Let's Connect!</h1>
+	<h1 class="text-center text-neutral-200">Let's Connect!</h1>
 	<div class="lg:w-full w-max flex lg:flex-row flex-col justify-center items-center lg:gap-12">
 		{#each LinksListItems as item}
 			<LinksListItem {...item} />

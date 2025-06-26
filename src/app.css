@@ -1,22 +1,27 @@
 @import 'tailwindcss';
 
 @theme {
-	--background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
-	--background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
 	--background-image-banner:
 		linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
-		radial-gradient(circle, rgba(248, 113, 113, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+		radial-gradient(circle at left, #a1a1a1 0%, rgba(0, 0, 0, 0.5) 100%);
 
-	--animate-banner: banner 0.5s cubic-bezier(0, 0.75, 0.25, 1) 0.25s normal backwards;
+	--animate-banner: banner 0.5s cubic-bezier(0, 0.75, 0.25, 1) 0.25s normal forwards;
+
 	--animate-banner-delayed:
-		banner 0.5s cubic-bezier(0, 0.75, 0.25, 1) 0.75s normal backwards,
-		bannerCaret 1.25s cubic-bezier(0, 0.75, 0.25, 1) 0.25s normal backwards;
-	--animate-banner-scroll-indicator:
-		bannerScrollIndicator 0.5s infinite alternate, bannerScrollIndicatorFade 0.5s 0.75s normal backwards;
+		banner 0.5s cubic-bezier(0, 0.75, 0.25, 1) 0.75s normal forwards,
+		bannerCaret 1.25s cubic-bezier(0, 0.75, 0.25, 1) 0.25s normal forwards;
 
-	--transition-observer: transform, opacity;
+	--animate-banner-scroll-indicator:
+		bannerScrollIndicator 0.5s infinite alternate, bannerScrollIndicatorFade 0.5s 0.75s normal forwards;
+
+	--observer: translate, opacity;
 
 	--ease-smooth: cubic-bezier(0, 0.75, 0.25, 1);
+
+	--breakpoint-8xl: 1536px;
+	--spacing-8xl: 1536px;
+
+	--color-ptrn-fg: color-mix(in oklab, var(--color-neutral-400) 25%, transparent);
 
 	@keyframes banner {
 		0% {
@@ -29,10 +34,10 @@
 	@keyframes bannerCaret {
 		0%,
 		100% {
-			border-right: solid 2px transparent;
+			box-shadow: inset -8px 0px 0px 0px transparent;
 		}
 		80% {
-			border-right: solid 2px white;
+			box-shadow: inset -8px 0px 0px 0px white;
 		}
 	}
 	@keyframes bannerScrollIndicator {
@@ -69,6 +74,19 @@
 	::file-selector-button {
 		border-color: var(--color-gray-200, currentcolor);
 	}
+}
+
+@utility pattern-* {
+	background-size: 10px 10px;
+	background-attachment: fixed;
+
+	background-image: repeating-linear-gradient(
+		--value([angle]),
+		currentColor 0px,
+		currentColor 2px,
+		transparent 0px,
+		transparent 50%
+	);
 }
 
 :root {

@@ -22,7 +22,7 @@ export const scrollTo = (node: HTMLElement, targetName: string, duration = 500) 
 
 		const targetElement: HTMLElement = scrollTargets.get(targetName);
 		const startY = window.scrollY;
-		const targetY = targetElement.getBoundingClientRect().top + startY - 96;
+		const targetY = targetElement.getBoundingClientRect().top + startY - 96; // Navbar Offset;
 		const startTime = performance.now();
 
 		const animateScroll = (currentTime: number) => {

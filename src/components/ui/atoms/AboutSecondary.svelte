@@ -9,10 +9,10 @@
 </script>
 
 <ScrollObserver {transition} className="xl:px-12">
-	<div class="text-neutral-300 text-[clamp(0.5rem,2vw,1rem)]">
+	<div class="text-neutral-200 text-[clamp(0.5rem,2vw,1rem)]">
 		I aim to create elegant and responsive websites for multiple purposes, like blogs and promotional pages.
 
-		<b class="text-red-400 text-end">
+		<b class="text-neutral-400 text-end">
 			I also work with web apps involving data analysis using relational and non-relational databases.
 		</b>
 	</div>

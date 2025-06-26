@@ -5,7 +5,7 @@
 </script>
 
 <nav
-	class="bg-black/85 backdrop-blur-xs border-b-2 border-b-white w-full h-12 flex flex-row justify-center sticky self-start top-0 z-50"
+	class="bg-black w-full h-12 flex flex-row justify-center sticky self-start top-0 z-200 shadow-[0px_0px_32px_32px] shadow-black"
 >
 	{#each NavbarItems as ref}
 		<NavbarItem {ref} />
