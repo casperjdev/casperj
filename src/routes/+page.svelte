@@ -6,6 +6,19 @@
 	import Links from '../components/ui/organisms/Links.svelte';
 	import Navbar from '../components/ui/organisms/Navbar.svelte';
 	import Projects from '../components/ui/organisms/Projects.svelte';
+
+	$effect(() => {
+		function onScroll() {
+			if (document.documentElement) {
+				document.documentElement.style.backgroundPositionY = `${window.scrollY * 0.9}px`;
+				console.log('called!');
+			}
+		}
+		onScroll();
+
+		window.removeEventListener('scroll', onScroll);
+		window.addEventListener('scroll', onScroll, { passive: true });
+	});
 </script>
 
 <svelte:head>
@@ -16,7 +29,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
 </svelte:head>
 
-<Background />
 <Banner />
 <Navbar />
 <main class="flex flex-row w-full max-w-8xl mx-auto h-full">
