@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import Icon from '../../../constants/icons/Icon.svelte';
 
 	let scrollIndicator: HTMLElement = null!;
@@ -34,22 +33,20 @@
     "
 		>
 			<div
-				class="w-max h-[clamp(1.5rem,15vw,7.5rem)] -mt-[clamp(0.15rem,2vw,1rem)] text-neutral-200 text-[clamp(1rem,10vw,5rem)] whitespace-nowrap tracking-widest"
+				class="w-max relative text-neutral-200 leading-normal xl:text-7xl lg:text-5xl md:text-3xl text-xl whitespace-nowrap tracking-widest"
 			>
 				<div class="opacity-5 overflow-hidden">
-					casper<b class="text-neutral-400 -mr-[clamp(1.2px,1vw,0.5rem)]">j</b>
+					casper<b class="text-neutral-400">j</b>
 				</div>
-				<div class="-translate-y-[clamp(1.5rem,15vw,7.5rem)] overflow-hidden animate-banner-delayed w-0">
-					casper<b class="text-neutral-400 -mr-[clamp(1.2px,1vw,0.5rem)]">j</b>
+				<div class="overflow-hidden animate-banner-delayed w-0 absolute top-0">
+					casper<b class="text-neutral-400">j</b>
 				</div>
 			</div>
 			<div
-				class="w-max h-[clamp(0.375rem,3.75vw,1.875rem)] text-neutral-400 text-[clamp(0.25rem,2.5vw,1.25rem)] whitespace-nowrap tracking-[0.125rem]"
+				class="w-max relative text-neutral-400 xl:text-lg lg:text-base md:text-sm text-xs whitespace-nowrap tracking-[0.125rem]"
 			>
 				<div class="opacity-5 overflow-hidden">Kacper Jeznach</div>
-				<div class="-translate-y-[clamp(0.375rem,3.75vw,1.875rem)] overflow-hidden animate-banner-delayed w-0">
-					Kacper Jeznach
-				</div>
+				<div class="overflow-hidden animate-banner-delayed w-0 absolute top-0">Kacper Jeznach</div>
 			</div>
 		</div>
 		<div class="pattern-[-45deg] text-ptrn-fg border-x border-current md:w-6 w-3 h-full shrink-0"></div>

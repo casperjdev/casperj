@@ -9,7 +9,7 @@
 </script>
 
 <ScrollObserver {transition}>
-	<h1 class="text-neutral-200 text-[clamp(1.25rem,6vw,3rem)]">
+	<h1 class="text-neutral-200 leading-normal xl:text-5xl lg:text-3xl md:text-xl text-base">
 		My name is <b class="text-neutral-400">Kacper</b> and I am an aspiring web developer from Warsaw, Poland.
 	</h1>
 </ScrollObserver>

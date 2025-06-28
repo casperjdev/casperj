@@ -1,6 +1,5 @@
 <script>
 	import '../app.css';
-	import Background from '../components/ui/atoms/Background.svelte';
 	import About from '../components/ui/organisms/About.svelte';
 	import Banner from '../components/ui/organisms/Banner.svelte';
 	import Links from '../components/ui/organisms/Links.svelte';
@@ -11,7 +10,6 @@
 		function onScroll() {
 			if (document.documentElement) {
 				document.documentElement.style.backgroundPositionY = `${window.scrollY * 0.9}px`;
-				console.log('called!');
 			}
 		}
 		onScroll();

@@ -1,5 +1,22 @@
 @import 'tailwindcss';
 
+/* ===== THEME ===== */
+
+/* 
+
+Body:
+ui: black
+decoration: --ptrn-fg
+
+Text:
+foreground: neutral-200
+accent: neutral-400
+
+Sizes:
+
+
+*/
+
 @theme {
 	--background-image-banner:
 		linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
@@ -12,7 +29,7 @@
 		bannerCaret 1.25s cubic-bezier(0, 0.75, 0.25, 1) 0.25s normal forwards;
 
 	--animate-banner-scroll-indicator:
-		bannerScrollIndicator 0.5s infinite alternate, bannerScrollIndicatorFade 0.5s 0.75s normal forwards;
+		bannerScrollIndicator 0.5s infinite alternate, bannerScrollIndicatorFade 0.5s 0.75s normal backwards;
 
 	--observer: translate, opacity;
 
